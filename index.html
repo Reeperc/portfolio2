@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taher's Portfolio</title>
+    <link rel="icon" type="image/png" href="images/portfolio.png">
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico">  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="path/to/tailwind.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.6/lottie.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("m31XodcdB3-286Qxg"); // User ID
+       })();
+    </script>
+</head>
+
+<body class="bg-gray-900 text-white">
+    <header class="bg-gradient-to-r from-purple-500 to-indigo-500 p-4 md:p-6 relative overflow-hidden">
+        <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center z-10 relative">
+            <a href="#" class="text-2xl md:text-3xl font-bold text-white">Portfolio</a>
+            <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-white">
+                <li><a href="#profile" class="hover:text-yellow-300 transition duration-300">About me</a></li>
+                <li><a href="#education" class="hover:text-yellow-300 transition duration-300">Education</a></li>
+                <li><a href="#projects" class="hover:text-yellow-300 transition duration-300">Projects</a></li>
+                <li><a href="#skills" class="hover:text-yellow-300 transition duration-300">Skills</a></li>
+                <li><a href="#experience" class="hover:text-yellow-300 transition duration-300">Practical Work</a></li>
+                <li><a href="#additional-info" class="hover:text-yellow-300 transition duration-300">Additional Infos</a></li>
+                <li><a href="#contact" class="hover:text-yellow-300 transition duration-300">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container mx-auto text-center py-10 md:py-20 relative z-10">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white drop-shadow-md" id="hero-title">Welcome to my portfolio</h1>
+            <p class="text-xl md:text-3xl mt-4 text-white drop-shadow-md" id="hero-subtitle">I'm Taher Karimdjee</p>
+            <div id="lottie-animation" class="w-32 h-32 md:w-48 md:h-48 mx-auto mt-8"></div>
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900 opacity-50"></div>
+        <div class="absolute bottom-0 left-0 w-full h-24 bg-white transform rotate-12 skew-y-2 opacity-10"></div>
+    </header>
+    
+
+    <!-- <section id="about" class="container mx-auto py-10 md:py-20">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6 md:mb-12" data-aos="fade-up">À propos de moi</h2>
+        <div class="flex flex-col md:flex-row justify-center items-center">
+            <img src="images/moi2.jpg" alt="Profile Picture" class="rounded-full w-24 h-24 md:w-32 md:h-32 shadow-lg mb-6 md:mb-0" data-aos="fade-right">
+            
+            <p class="text-lg md:text-xl ml-0 md:ml-8" data-aos="fade-left">
+                Passionate about cybersecurity, I have strong skills in protecting networks and IoT devices from cyber threats. I am currently seeking a technician internship in this field, as well as a 12-month professionalization contract to apply my knowledge and contribute to innovative projects.
+            </p>
+            <p class="text-lg md:text-xl ml-0 md:ml-8" data-aos="fade-left">
+                My academic journey and projects have allowed me to acquire expertise in network security management, programming, and risk management. I am determined, meticulous, and always looking for new opportunities to improve my skills and help companies secure their infrastructures.
+            </p> ffdfddddfdffgfdgs
+        </div>
+    </section> -->
+    
+
+    <section id="profile" class="container mx-auto py-10 md:py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                <img src="images/moi4.jpg" alt="Profile Photo" class="rounded-full mx-auto w-3/4 md:w-full shadow-lg">
+            </div>
+            <div class="w-full md:w-2/3 text-left md:pl-10">
+                <h2 class="text-3xl md:text-5xl font-bold text-yellownot-300 mb-6 md:mb-12 text-center md:text-left">About me</h2>
+                <p class="text-lg md:text-xl text-whitee-300 mb-4">
+                    22 years old French engineering student. Currently, I am a fourth-year student at ESIGELEC Rouen, specializing in network and IoT cybersecurity. My goal is to become a cybersecurity engineer.
+                </p>
+                <p class="text-lg md:text-xl text-whitee-300 mb-4">
+                    Passionate about cybersecurity, I have strong skills and enjoy participating in CTF Challenges in my free time, either with friends or alone. I am currently seeking a technician internship in this field, as well as a 12-month professionalization contract to apply my knowledge and contribute to innovative projects.
+                </p>
+                <!-- <p class="text-lg md:text-xl text-whitee-300 mb-4">
+                    My academic journey and projects have allowed me to acquire expertise in network security management and programming. I am determined, meticulous, and always looking for new opportunities to improve my skills.
+                </p> -->
+            </div>
+        </div>
+    </section>
+    
+    <section id="education" class="bg-gray-80000 py-10 md:py-20">
+        <h2 class="text-3xl md:text-5xl font-bold text-center text-yellow-3000 mb-6 md:mb-12" data-aos="fade-up">Education</h2>
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 gap-4">
+                <!-- Engineering Degree -->
+                <div class="education-card p-4 bg-gray-7000 rounded-lg shadow-lg" data-aos="fade-up">
+                    <h3 class="text-xl font-bold mb-2 text-blue-4000">SEPT 2022 - JUN 2025</h3>
+                    <p class="mb-2 text-lg text-whitee font-bold">Engineering Degree in Cybersecurity of Networks and IoT</p>
+                    <p class="mb-2 text-whitee">ESIGELEC, Rouen, France</p>
+                    <p class="mb-4">
+                        <a href="https://www.esigelec.fr/fr/cybersecurite-des-reseaux-et-de-liot" class="detailss-btn">More details</a>
+                    </p>
+                </div>
+                <!-- CPGE -->
+                <div class="education-card p-4 bg-gray-7000 rounded-lg shadow-lg" data-aos="fade-up">
+                    <h3 class="text-xl font-bold mb-2 text-blue-4000">SEPT 2019 - JUN 2022</h3>
+                    <p class="mb-2 text-lg text-whitee font-bold">CPGE PC</p>
+                    <p class="mb-2 text-whitee">Lycée Leconte de Lisle, Saint-Denis, La Réunion</p>
+                </div>
+                <!-- High School Diploma -->
+                <div class="education-card p-4 bg-gray-7000 rounded-lg shadow-lg" data-aos="fade-up">
+                    <h3 class="text-xl text-blue-4000 font-bold mb-2 text-blue-4000">JUN 2019</h3>
+                    <p class="mb-2 text-lg text-whitee font-bold">Baccalauréat S with honors</p>
+                    <p class="mb-2 text-whitee">Lycée Sarda Garriga, Saint-André, La Réunion</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+   
+    
+    
+ 
+    
+
+    <section id="projects" class="bg-gray-800 py-10 md:py-20">
+        <h2 class="text-3xl md:text-5xl font-bold text-center text-yellow-3010 mb-6 md:mb-12" data-aos="fade-up">Projects</h2>
+        
+        <div class="flex flex-wrap justify-center">
+            <!-- Network Architecture Project -->
+            <div class="project-card m-4 p-6 bg-gray-700 rounded-lg shadow-lg text-left transform transition-transform hover:scale-105" data-aos="fade-up">
+                <h3 class="text-2xl font-bold mb-4 text-blue-400">Network Architecture Project</h3>
+                <p class="mb-4">Project completed at the end of the 4th year of engineering school</p>
+                <p class="mb-4">Set up a secure local network for a gaming championship (use of the SCRUM methodology).</p>
+                <button class="details-btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="toggleDetails(this)">Details</button>
+                <div class="project-details mt-4 hidden">
+                    <h4 class="text-xl font-bold mb-2">Project Description</h4>
+                    <ul class="list-disc list-inside mb-4">
+                        <li>Set up a network and system infrastructure allowing users to play. The game organizer can create tournaments.</li>
+                        <li>Implement network security backups for the configurations of routers/switches, tournament history, and the distribution and segmentation of a Class C IP address into 3 subnets.</li>
+                        <li>Players must be able to connect to the network via WiFi, access a website through their session, and receive an email when it is their turn to play (set up an email server).</li>
+                    </ul>
+                    <h4 class="text-xl font-bold mb-2">Proposed Solution</h4>
+                    <h5 class="text-lg font-bold mb-1">Network Part:</h5>
+                    <ul class="list-disc list-inside mb-4">
+                        <li>A router to interconnect the city with the rest of the world</li>
+                        <li>An IP addressing plan</li>
+                        <li>A backup of the configuration on a server</li>
+                        <li>LAN traffic security</li>
+                    </ul>
+                    <h5 class="text-lg font-bold mb-1">System Part:</h5>
+                    <ul class="list-disc list-inside mb-4">
+                        <li>A web server, hosting the website for displaying scores and launching games</li>
+                        <li>A mail server and a webmail for appointment messages</li>
+                        <li>DNS server for resolving DMZ and Trusted names</li>
+                        <li>An Active Directory directory server to authenticate players</li>
+                    </ul>
+                    <h5 class="text-lg font-bold mb-1">Match Management:</h5>
+                    <ul class="list-disc list-inside mb-4">
+                        <li>A secure web interface for displaying results (protected by directory login/password)</li>
+                        <li>The ability to launch a server to host a competition (Administrator)</li>
+                        <li>To prevent cheating, the player must have the game and only the game on their screen</li>
+                    </ul>
+                    <!-- <h4 class="text-xl font-bold mb-2">Deliverables</h4>
+                    <ul class="list-disc list-inside mb-4">
+                        <li>Network plan</li>
+                        <li>Installation procedures for each equipment</li>
+                        <li>Database schema</li>
+                        <li>Web application (PHP)</li>
+                        <li>Test scenario</li>
+                    </ul> -->
+                    <h4 class="text-xl font-bold mb-2">What I learned from this project</h4>
+                    <ul class="list-disc list-inside mb-4">
+                        <li>Gained a better understanding of the agile SCRUM methodology in a project: it is a very efficient method, based on good communication among the team and daily meetings.</li>
+                        <li>Deployed network services: it was the first project in which I used real hardware, as we usually simulate everything on Cisco Packet Tracer in class to learn the basic commands.</li>
+                        <li>Developed a website: I've had experience in this field before, but this time I was completely in charge of implementing and updating the site. I learned more about the functioning of GitHub, beyond just "push" and "pull", understanding how branches work and their usefulness. I also enjoyed discovering dynamic animations on the web with JavaScript. This project is actually the reason why I decided to create this portfolio.</li>
+                        <li>This project required knowing the basic commands, both in shell and Cisco IOS.</li>
+                        <li>Increased knowledge: learned about backups (discovered Oxidized) and how easy it is to set up WiFi for a network.</li>
+                    </ul>
+                    
+                    <h4 class="text-xl font-bold mb-2">Prerequisites</h4>
+                    <ul class="list-disc list-inside mb-4">
+                        <li>TCP/IP Networks</li>
+                        <li>Cisco IOS</li>
+                        <li>Linux Shell</li>
+                        <li>Web</li>
+                        <li>PHP</li>
+                        <li>VirtualBox</li>
+                        <li>Windows Server (An Active Directory)</li>
+                        <li>Apache</li>
+                        <li>SMTP</li>
+                        
+                    </ul>
+                    <!-- Swiper -->
+                    <div class="swiper-container project-carousel detailsm">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/image1.jpg" alt="Project Image 1"></div>
+                            <div class="swiper-slide"><img src="images/image2.jpg" alt="Project Image 2"></div>
+                            <div class="swiper-slide"><img src="images/image3.jpg" alt="Project Image 3"></div>
+                            <div class="swiper-slide"><img src="images/image4.jpg" alt="Project Image 3"></div>
+                            <div class="swiper-slide"><img src="images/image5.jpg" alt="Project Image 3"></div>
+                            <div class="swiper-slide"><img src="images/image6.jpg" alt="Project Image 3"></div>
+                            <div class="swiper-slide"><img src="images/image7.jpg" alt="Project Image 3"></div>
+                            <div class="swiper-slide"><img src="images/image8.jpg" alt="Project Image 3"></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Navigation -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Robot Programming and Assembly Project -->
+        <div class="project-card m-4 p-6 bg-gray-700 rounded-lg shadow-lg text-left transform transition-transform hover:scale-105" data-aos="fade-up">
+            <h3 class="text-2xl font-bold mb-4 text-blue-400">Robot Programming and Assembly</h3>
+            <p class="mb-4">Participated in a robotics competition with a team.</p>
+            <p class="mb-4">Programming and assembling a microcontroller-based robot using C language.</p>
+            <button class="details-btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="toggleDetails(this)">Details</button>
+            <div class="project-details mt-4 hidden">
+                <h4 class="text-xl font-bold mb-2">Project Description</h4>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Designed and assembled a robot for a competitive event</li>
+                    <li>Developed control algorithms in C for various robotic tasks</li>
+                    <li>Integrated sensors and actuators to enhance robot capabilities</li>
+                </ul>
+                <h4 class="text-xl font-bold mb-2">Proposed Solution</h4>
+                <h5 class="text-lg font-bold mb-1">Hardware Part:</h5>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Selected and assembled appropriate microcontroller and components</li>
+                    <li>Integrated various sensors (IR, ultrasonic, etc.) for obstacle detection and navigation</li>
+                    <li>Designed and implemented power management for the robot</li>
+                </ul>
+                <h5 class="text-lg font-bold mb-1">Software Part:</h5>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Developed control algorithms in C for robot movement and task execution</li>
+                    <li>Implemented real-time data processing and decision-making</li>
+                    <li>Tested and debugged the software to ensure reliable performance</li>
+                </ul>
+                <h5 class="text-lg font-bold mb-1">Competition Outcomes:</h5>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Robot successfully completed the assigned tasks</li>
+                    <li>Achieved high rankings in various categories (speed, accuracy, etc.)</li>
+                    <li>Learned valuable lessons in teamwork and project management</li>
+                </ul>
+                <!-- Swiper -->
+                <div class="swiper-container project-carousel detailsm">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/robot3.jpg" alt="Project Image 9"></div>
+                        <div class="swiper-slide"><img src="images/robot4.jpg" alt="Project Image 10"></div>
+                        <div class="swiper-slide">
+                            <video controls id="projectVideo">
+                                <source src="videos/robot.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                
+            </div>
+        </div>
+         <!-- Solidarity Project -->
+         <div class="project-card m-4 p-6 bg-gray-700 rounded-lg shadow-lg text-left transform transition-transform hover:scale-105" data-aos="fade-up"">
+            <h3 class="text-2xl font-bold mb-4 text-blue-400">Solidarity Project</h3>
+            <p class="mb-4">Organizing an inclusive sports event for students at Camille Claudel Middle School, Rouen.</p>
+            <button class="details-btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="toggleDetails(this)">Details</button>
+            <div class="project-details mt-4 hidden">
+                <h4 class="text-xl font-bold mb-2">Project Description</h4>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Organizing an inclusive sports event over a period of 6 months.</li>
+                    <li>Collaborating with a team of 5 students and the DUC Dieppe club.</li>
+                    <li>The event allowed students from Camille Claudel Middle School to discover wheelchair rugby.</li>
+                    <li>Participation in workshops and wheelchair rugby matches.</li>
+                </ul>
+                <h4 class="text-xl font-bold mb-2">Event Details</h4>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Planning and coordinating the event with the DUC Dieppe club.</li>
+                    <li>Communication and logistical organization with participants and supervisors.</li>
+                    <li>Creating and managing interactive workshops to raise awareness and introduce students to wheelchair rugby.</li>
+                    <li>Supervision and refereeing of matches to ensure a positive and safe experience.</li>
+                </ul>
+                <h4 class="text-xl font-bold mb-2">Results and Impact</h4>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Active and enthusiastic participation from students and supervisors.</li>
+                    <li>Increased awareness of inclusion and adaptive sports.</li>
+                    <li>Enhanced organizational and leadership skills among participants.</li>
+                    <li>Established lasting connections between students and local sports clubs.</li>
+                </ul>
+                <p class="mb-4">Duration: October 2022 – April 2023</p>
+                <div class="swiper-container project-carousel detailsm">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/image16.jpg" alt="Project Image 3"></div>
+                        <div class="swiper-slide"><img src="images/image10.jpg" alt="Project Image 1"></div>
+                        <div class="swiper-slide"><img src="images/image12.jpg" alt="Project Image 2"></div>
+                        <div class="swiper-slide"><img src="images/image13.jpg" alt="Project Image 3"></div>
+                        <div class="swiper-slide"><img src="images/image14.jpg" alt="Project Image 3"></div>
+                        <div class="swiper-slide"><img src="images/image15.jpg" alt="Project Image 3"></div>
+                        <div class="swiper-slide"><img src="images/image11.jpg" alt="Project Image 3"></div>
+                        <!-- <div class="swiper-slide"><img src="images/image8.jpg" alt="Project Image 3"></div> -->
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Navigation -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+        </div>
+        
+    </section>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    
+    
+    <section id="experience" class="bg-gray-8000 py-10 md:py-20" >
+        <h2 class="text-3xl md:text-5xl font-bold text-center text-yellow-300 mb-6 md:mb-12" data-aos="fade-up">Practical Work</h2>
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" >
+                <!-- Securing Web Applications -->
+                <div class="experience-card p-4 bg-gray-7000 rounded-lg shadow-lg" data-aos="fade-up">
+                    <h3 class="text-xl font-bold mb-2 text-blue-4001">Securing Web Applications</h3>
+                    <p class="mb-4">Objective: Identify and correct web vulnerabilities.</p>
+                    <ul class="list-disc list-inside mb-4">
+                        <li>SQL Injection and XSS: Simulations and protections (DVWA, OWASP ZAP).</li>
+                        <li>Protection against Phishing.</li>
+                        <li>Tools: OWASP ZAP, Hack Splaining.</li>
+                    </ul>
+                </div>
+                <!-- Encryption and Ransomware Attack -->
+                <div class="experience-card p-4 bg-gray-7000 rounded-lg shadow-lg" data-aos="fade-up">
+                    <h3 class="text-xl font-bold mb-2 text-blue-4001">Encryption and Ransomware Attack</h3>
+                    <p class="mb-4">Objective: Understand cryptography and simulate ransomware attacks.</p>
+                    <ul class="list-disc list-inside mb-4">
+                        <li>AES, RSA, TLS, Digital Signature (OpenSSL).</li>
+                        <li>Development and simulation of ransomware.</li>
+                        <li>Tools: OpenSSL, Kali Linux, Windows 7.</li>
+                    </ul>
+                </div>
+                <!-- Trojan: Control and Protection -->
+                <div class="experience-card p-4 bg-gray-7000 rounded-lg shadow-lg" data-aos="fade-up">
+                    <h3 class="text-xl font-bold mb-2 text-blue-4001">Trojan: Control and Protection</h3>
+                    <p class="mb-4">Objective: Understand and protect against Trojans.</p>
+                    <ul class="list-disc list-inside mb-4">
+                        <li>Creation and dissemination of trojans (Shellter, Metasploit).</li>
+                        <li>Control and security (netstat, taskkill).</li>
+                        <li>Tools: Kali Linux, Windows 7, Shellter, Metasploit.</li>
+                    </ul>
+                </div>
+                <!-- EBIOS Risk Manager -->
+                <div class="experience-card p-4 bg-gray-7000 rounded-lg shadow-lg" data-aos="fade-up">
+                    <h3 class="text-xl font-bold mb-2 text-blue-4001">EBIOS Risk Manager</h3>
+                    <p class="mb-4">Objective: Risk study according to EBIOS.</p>
+                    <ul class="list-disc list-inside mb-4">
+                        <li>Risk analysis of the information system of an ID renewal (in France).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills" class="container-skills mx-auto py-10 md:py-20">
+        <h2 class="text-3xl md:text-5xl font-bold text-center mb-6 md:mb-12">Hard Skills</h2>
+        <div class="flex flex-wrap justify-center">
+            <div class="skill-card m-4 p-6 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105" data-aos="fade-up">
+                <h3 class="text-xl md:text-2xl font-bold mb-4">Programming</h3>
+                <div class="flex flex-wrap justify-center">
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-code text-2xl mr-2"></i>Python</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-code text-2xl mr-2"></i>C</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-code text-2xl mr-2"></i>SQL</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-code text-2xl mr-2"></i>Java</div>
+                </div>
+            </div>
+            <div class="skill-card3 m-4 p-6  rounded-lg shadow-lg text-center transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-xl md:text-2xl font-bold mb-4">Web Development</h3>
+                <div class="flex flex-wrap justify-center">
+                    <div class="skill-item flex items-center m-2"><i class="fab fa-html5 text-2xl mr-2"></i>HTML</div>
+                    <div class="skill-item flex items-center m-2"><i class="fab fa-css3-alt text-2xl mr-2"></i>CSS</div>
+                    <div class="skill-item flex items-center m-2"><i class="fab fa-js text-2xl mr-2"></i>JavaScript</div>
+                    <div class="skill-item flex items-center m-2"><i class="fab fa-php text-2xl mr-2"></i>PHP</div>
+                </div>
+            </div>
+            <div class="skill-card4 m-4 p-6  rounded-lg shadow-lg text-center transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="400">
+                <h3 class="text-xl md:text-2xl font-bold mb-4">Virtualization & OS</h3>
+                <div class="flex flex-wrap justify-center">
+                    <div class="skill-item flex items-center m-2"><i class="fab fa-windows text-2xl mr-2"></i>Windows Server</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-cube text-2xl mr-2"></i>VM VirtualBox</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-server text-2xl mr-2"></i>VMware</div>
+                    <div class="skill-item flex items-center m-2"><i class="fab fa-linux text-2xl mr-2"></i>Linux Server</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-terminal text-2xl mr-2"></i>Shell Linux</div>
+                </div>
+            </div>
+            <div class="skill-card5 m-4 p-6  rounded-lg shadow-lg text-center transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-xl md:text-2xl font-bold mb-4">Tools & Software</h3>
+                <div class="flex flex-wrap justify-center">
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-tools text-2xl mr-2"></i>MFA</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-tools text-2xl mr-2"></i>Secureboot</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-users-cog text-2xl mr-2"></i>Citrix</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-tools text-2xl mr-2"></i>OrCAD</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-tools text-2xl mr-2"></i>MS Office</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-database text-2xl mr-2"></i>Oracle SQL Developer</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-tools text-2xl mr-2"></i>MySQL</div>
+                    <div class="skill-item flex items-center m-2"><i class="fab fa-apache text-2xl mr-2"></i>Apache</div>
+                    <!-- <div class="skill-item flex items-center m-2"><i class="fas fa-server text-2xl mr-2"></i>Git</div> -->
+                    <div class="skill-item flex items-center m-2"><i class="fab fa-github text-2xl mr-2"></i>GitHub</div>
+                    <div class="skill-item flex items-center m-2"><i class="fab fa-linux text-2xl mr-2"></i>Linux</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-network-wired text-2xl mr-2"></i>Wireshark</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-shield-alt text-2xl mr-2"></i>Burp Suite</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-folder text-2xl mr-2"></i>WinSCP</div>
+                </div>
+            </div>
+            <div class="skill-card2 m-4 p-6  rounded-lg shadow-lg text-center transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="text-xl md:text-2xl font-bold mb-4">Networks & Security</h3>
+                <div class="flex flex-wrap justify-center">
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-network-wired text-2xl mr-2"></i>TCP/IP</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-network-wired text-2xl mr-2"></i>SMTP</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-network-wired text-2xl mr-2"></i>Cisco IOS</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-server text-2xl mr-2"></i>Router/Switch Configuration</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-firewall text-2xl mr-2"></i>Firewalls</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-tools text-2xl mr-2"></i>pfSense</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-users-cog text-2xl mr-2"></i>Active Directory (LDAP)</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-tools text-2xl mr-2"></i>SIEM</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-tools text-2xl mr-2"></i>SOC</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-tools text-2xl mr-2"></i>SOAR</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-tools text-2xl mr-2"></i>IDPS</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-tools text-2xl mr-2"></i>EDR</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-tools text-2xl mr-2"></i>XDR</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-tools text-2xl mr-2"></i>NSX</div>
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-shield-alt text-2xl mr-2"></i>EBIOS Risk Manager</div>
+                </div>
+            </div>
+            
+            <!-- <div class="skill-card6 m-4 p-6  rounded-lg shadow-lg text-center transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="500">
+                <h3 class="text-xl md:text-2xl font-bold mb-4">knowledge</h3>
+                <div class="flex flex-wrap justify-center">
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-exclamation-triangle text-2xl mr-2"></i>All4tec</div>
+                    
+                    <div class="skill-item flex items-center m-2"><i class="fas fa-tools text-2xl mr-2"></i>pfSense</div>
+
+                
+                </div>
+            </div> -->
+        </div>
+    </section>
+    
+    <!-- AOS Library for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: false,
+        });
+    </script>
+    
+    
+
+    <section id="professional-experience" class="bg-gray-8008 py-10 md:py-20">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-yellow-300 mb-6 md:mb-12" data-aos="fade-up">Other Experience and Projects</h2>
+        <div class="container mx-auto px-4">
+            <div class="experience-card p-4 bg-gray-7008 rounded-lg shadow-lg mb-6" data-aos="fade-up">
+                <h3 class="text-xl font-bold mb-2 text-blue-400">Pet Store Advisor</h3>
+            <p class="mb-2"><strong>Jardinerie Poullain, Le Petit-Quevilly</strong> - SEP 2023 - FEB 2024</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Personalized customer guidance</li>
+                <li>Responsible for stock management and the pet store section</li>
+                <li>Administration of daily care and monitoring of animals</li>
+                <li>Application of SCRUM methodology</li>
+            </ul>
+            <p class="mb-2">I practiced the SCRUM methodology for the first time in a business setting through this student job. I developed my organizational and communication skills, as well as stress management when dealing with unpredictable customers. Nonetheless, I have fond memories of this experience thanks to the wonderful team I had the pleasure of working with.</p>
+        </div>
+        </div>
+    
+        <!-- <h2 class="text-3xl md:text-4xl font-bold text-center text-yellow-300 mb-6 md:mb-12" data-aos="fade-up">Other Projects</h2> -->
+        <div class="container mx-auto px-4">
+            <div class="experience-card p-4 bg-gray-7008 rounded-lg shadow-lg mb-6" data-aos="fade-up">
+                <h3 class="text-xl font-bold mb-2 text-blue-400">Programming and Web Development</h3>
+             <ul class="list-disc list-inside mb-4">
+                <li>Development of a school management tool (Java, SQL – V-Model)</li>
+                <li>Development of an online gaming site (HTML, PHP, CSS, SQL)</li>
+                <li>Microcontroller programming and assembly: robot competition (C language)</li>
+            </ul>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="additional-info" class="bg-gray-800 py-10 md:py-20" >
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-yellow-3010 mb-6 md:mb-12" data-aos="fade-up">Additional Information</h2>
+        <div class="container mx-auto px-4">
+            
+            <div class="additional-info-card p-4 bg-gray-700 rounded-lg shadow-lg mb-6" data-aos="fade-up">
+                <h3 class="text-xl font-bold mb-2 text-blue-400">Languages</h3>
+                <ul class="list-disc list-inside mb-4">
+                    <li>French: Fluent (native speaker)</li>
+                    <p></p>
+                    <li>English: Advanced (B2, TOEIC 890)</li>
+                    <li>German: Basic (A2)</li>
+                    <li>Japanese: Basic (A1)</li>
+                </ul>
+            </div>
+            <div class="additional-info-card p-4 bg-gray-700 rounded-lg shadow-lg" data-aos="fade-up">
+                <h3 class="text-xl font-bold mb-2 text-blue-400">Interests</h3>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Aquarium, Plants</li>
+                    <li>Scuba Diving</li>
+                    <li>Hiking, Badminton</li>
+                    <li>Drawing, Piano</li>
+                    <li>CTF Challenges</li>
+                </ul>
+            </div>
+            <div class="additional-info-card p-4 bg-gray-700 rounded-lg shadow-lg" data-aos="fade-up">
+                <h3 class="text-xl font-bold mb-2 text-blue-400">Soft skills</h3>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Communication</li>
+                    <li>Team Work</li>
+                    <li>Work Ethic</li>
+                    <li>Curiosity</li>
+                    <li>Motivation</li>
+                    <li>Rigorous</li>
+                    <li>Autonomous</li>
+                    <li>Organized</li>
+                    <li>Able to work under pressure</li>
+                    <li>Stress management skills</li>
+                    <li>Committed</li>
+                    <!-- <li>Emotional intelligence</li> -->
+                </ul>
+            </div>
+            <div class="additional-info-card-c-info p-4 bg-gray-700 rounded-lg shadow-lg mb-6" data-aos="fade-up">
+                <h3 class="text-xl font-bold mb-2 text-blue-400">Contact Information</h3>
+                <div class="flex items-center mb-2">
+                    <i class="fas fa-map-marker-alt text-blue-400 mr-2"></i>
+                    <p>Rouen, France</p>
+                </div>
+                <div class="flex items-center mb-2">
+                    <i class="fas fa-phone-alt text-blue-400 mr-2"></i>
+                    <p>+33-783-689-984</p>
+                </div>
+                <div class="flex items-center mb-2">
+                    <i class="fas fa-envelope text-blue-400 mr-2"></i>
+                    <p>taher.karimdjee@groupe-esigelec.org</p>
+                </div>
+                <div class="flex items-center mb-2">
+                    <i class="fas fa-birthday-cake text-blue-400 mr-2"></i>
+                    <p>22/01/2002</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+
+    <section id="contact" class="container-coco mx-auto py-10 md:py-20">
+        <h2 class="text-3xl md:text-5xl font-bold text-center mb-6 md:mb-12 mimi" data-aos="fade-up">Contact</h2>
+        <form id="contact-form" class="max-w-lg mx-auto bg-whitee p-4 md:p-8 rounded-lg shadow-lg container-cocor" data-aos="fade-up">
+            <input type="text" name="name" placeholder="Your name" class="input-field" required>
+            <input type="email" name="email" placeholder="Your email" class="input-field" required>
+            <textarea name="message" placeholder="You message" class="input-field" required></textarea>
+            <div class="file-input-wrapper">
+                <input type="file" id="attachment" name="attachment" class="file-input" hidden>
+                <button type="button" class="file-input-btn" onclick="document.getElementById('attachment').click()">Choose a file</button>
+                <span id="file-chosen">No file selected</span>
+            </div>
+            <button type="submit" class="w-full py-4 bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-500 hover:to-blue-600 rounded-lg text-lg md:text-xl font-bold text-white"><i class="fas fa-paper-plane"></i> Send</button>
+        </form>
+    </section>
+
+    <footer class="bg-gradient-to-r from-indigo-500 to-purple-500 p-6 text-center">
+        <p>&copy; 2024 My Portfolio - Taher Karimdjee</p>
+        <div class="flex justify-center space-x-4 mt-4">
+            <a href="https://github.com/Reeperc" class="fab fa-github fa-2x text-white hover:text-yellow-300"></a>
+            <a href="https://www.linkedin.com/in/taherkarimdjee/" class="fab fa-linkedin fa-2x text-white hover:text-yellow-300"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>        
+</body>
+</html>
+<script>
+    function toggleDetails(button) {
+        var details = button.nextElementSibling;
+        if (details.classList.contains('hidden')) {
+            details.classList.remove('hidden');
+            details.classList.add('show');
+            button.textContent = 'Less details';
+        } else {
+            details.classList.add('hidden');
+            details.classList.remove('show');
+            button.textContent = 'Détails';
+        }
+    }
+    </script>
+    
+    
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+            function toggleDetails(button) {
+                var details = button.nextElementSibling;
+                if (details.classList.contains('hidden')) {
+                    details.classList.remove('hidden');
+                    details.classList.add('show');
+                    button.textContent = 'Less details';
+                    initSwiper();
+                } else {
+                    details.classList.add('hidden');
+                    details.classList.remove('show');
+                    button.textContent = 'Details';
+                }
+            }
+        
+            function initSwiper() {
+                var swiper = new Swiper('.swiper-container', {
+                    loop: true,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+            }
+        </script>
+        
+ <script>
+//     function initSwiper() {
+// var swiper = new Swiper('.swiper-container', {
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//     },
+//     loop: false,
+//     autoplay: true,
+//     effect: 'slide',
+//     grabCursor: true,
+//     centeredSlides: true,
+//     slidesPerView: 'auto',
+//     spaceBetween: 30,
+//     on: {
+//         slideChange: function () {
+//             var video = document.getElementById('project-video');
+//             if (swiper.activeIndex === swiper.slides.length - 1) {
+//                 video.play();
+//                 Swiper( autoplay: false )
+//                 video.onended = function () {
+//                     swiper.slideNext();
+//                 };
+//             } else {
+//                 video.pause();
+//                 video.currentTime = 0;
+//             }
+//         }
+//     }
+
+// });
+//     }
+</script>
+        
+    
+</body>
+    
+    
